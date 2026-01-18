@@ -11,18 +11,20 @@ int main() {
 	
 	// TODO Complete the program
 
-	srand(time(NULL));
+	srand(time(NULL)); // Enables to use rand() function in the programm.
 
 	int myrand = rand() % 11;
+	/*
+	* Generates a pseudorandom number and stores its remainder when divided by
+	* 11 into myrand. 
+	*/
 
-	printf("%d\n", myrand);
-
-	if (myrand <= 4) {
+	if (myrand <= 4) { // checks if the variable <= 4
 		printf("Eat more beef, kick less cats\n");
-	} else if (myrand == 10) {
+	} else if (myrand == 10) { // checks if the vareable is 10
 		printf("Larn is the best roguelike\n");
-	} else {
+	} else { // in all other cases, if 5 <= myrand <= 9
 		printf("FRODO LIVES\n"); 
 	}
-
+	printf("The random number was: %d\n", myrand); // prints value of myrand
 }
